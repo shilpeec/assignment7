@@ -23,7 +23,7 @@ FastAPI
 
 Pydantic
 
-FAISS (or faiss-cpu for CPU support)
+FAISS 
 
 Sentence-Transformers
 
@@ -31,7 +31,27 @@ NumPy
 
 Uvicorn (for serving FastAPI app)
 
-1. receipe_master
+1. Create Recipe Embeddings
+You will first need to generate embeddings for all the recipes using Sentence-Transformer.
+
+There are two different projects -
+ 1. receipe_master
    Here we are Just trying to search for the embedded receipes only
-3. receipe_master_new
+2. receipe_master_new
    Here we are trying to find any receipe, If it is unable to find the querried receipe from the embeddings then the LLM is called.
+
+Chrome Extension
+The Chrome extension is built to interact with the FastAPI backend. It sends a query to the API and displays the response in the extension popup.
+
+Running the Chrome Extension
+Load the extension into Chrome:
+
+Go to chrome://extensions/
+
+Enable Developer Mode
+
+Click on "Load unpacked"
+
+Select the chrome_extension folder
+
+Once the extension is loaded, you can click the extension icon to open the popup, enter a query, and receive a relevant recipe.
