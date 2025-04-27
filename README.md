@@ -38,7 +38,7 @@ There are two different projects -
  1. receipe_master
    Here we are Just trying to search for the embedded receipes only
 2. receipe_master_new
-   Here we are trying to find any receipe, If it is unable to find the querried receipe from the embeddings then the LLM is called.
+   Here we are trying to find any receipe, Using the agentic flow, If it is unable to find the querried receipe from the embeddings then the LLM is called.
 
 Chrome Extension
 The Chrome extension is built to interact with the FastAPI backend. It sends a query to the API and displays the response in the extension popup.
